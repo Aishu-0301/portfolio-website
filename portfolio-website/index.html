@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aishwarya J - Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5eefc, #a29bfe);
+    color: #3b3a59;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1.8rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(101, 71, 255, 0.5);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.15);
+  }
+
+  header p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+
+  nav {
+    margin-top: 1.5rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background: #fff;
+    color: #6a11cb;
+    box-shadow: 0 2px 8px rgba(101, 71, 255, 0.4);
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2.5rem auto 3rem auto;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(101, 71, 255, 0.15);
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 18px;
+  }
+
+  section:nth-child(odd) {
+    background: #d5d0f6;
+    box-shadow: 0 8px 20px rgba(105, 93, 220, 0.3);
+  }
+
+  section:nth-child(even) {
+    background: #f2f1fc;
+    box-shadow: 0 8px 20px rgba(152, 151, 227, 0.3);
+  }
+
+  h2 {
+    color: #6a11cb;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.8px;
+    text-shadow: 1px 1px 1px rgba(100, 81, 198, 0.3);
+    border-bottom: 3px solid #957ff1;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  ul.skills, ul.achievements, ul.softskills {
+    list-style: none;
+    columns: 2;
+  }
+
+  ul.skills li, ul.achievements li, ul.softskills li {
+    display: inline-block;
+    background: #6a11cb;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0.75rem 0.25rem 0;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.5);
+    transition: transform 0.25s ease;
+  }
+
+  ul.skills li:hover, ul.achievements li:hover, ul.softskills li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(106, 17, 203, 0.8);
+  }
+
+  .contact-info {
+    font-size: 1.1rem;
+    color: #3b3a59;
+  }
+
+  .contact-info a {
+    color: #6a11cb;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-info a:hover {
+    color: #2575fc;
+    text-decoration: underline;
+  }
+
+  .project-desc {
+    font-size: 1.1rem;
+    color: #3b3a59;
+    font-weight: 500;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.4rem 1rem;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -5px 15px rgba(101, 71, 255, 0.5);
+  }
+
+  /* Responsive */
+
+  @media (max-width: 700px) {
+    ul.skills, ul.achievements, ul.softskills {
+      columns: 1;
+    }
+
+    nav a {
+      display: block;
+      margin: 0.6rem 0;
+    }
+
+    main {
+      margin: 1.5rem 1rem 2rem 1rem;
+      padding: 1rem 1rem;
+    }
+
+    section {
+      padding: 1rem 1rem;
+    }
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Aishwarya J</h1>
+  <p>Motivated final-year IT student </p>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Final-year Information Technology student at Panimalar Engineering College, Chennai. Strong skills in Java, HTML, and CSS with a passion for problem-solving and learning new technologies quickly. Eager to apply academic knowledge and skills to real-world projects and industry challenges.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul class="skills">
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>  
+      <li>VS Code</li>
+      <li>Canva</li>
+      <li>Eclipse</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="project-desc"><strong>Portfolio Website</strong> — Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript. Implemented an interactive contact form with a styled success pop-up notification.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Information Technology</strong><br />Panimalar Engineering College, Chennai (2022–2026)<br />CGPA: 8.31</p>
+    <p><strong>12th Standard</strong><br />St. Theresa Girls Higher Secondary School (2021–2022)<br />Percentage: 85.6%</p>
+    <p><strong>10th Standard</strong><br />St. Theresa Girls Higher Secondary School (2019–2020)<br />Percentage: 80.2%</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Java SE 11 - Oracle</li>
+      <li>Frontend Web Developer - Infosys Springboard</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="achievements">
+      <li>Presented paper at PEC conferences</li>
+      <li>Volunteered as coordinator for PEC conference</li>
+      <li>Participated in MIT Hackathon</li>
+      <li>Mentor Connect participation</li>
+    </ul>
+  </section>
+
+  <section id="softskills">
+    <h2>Soft Skills</h2>
+    <ul class="softskills">
+      <li>Active Listening</li>
+      <li>Flexibility</li>
+      <li>Teamwork</li>
+      <li>Quick Learning</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-info">
+      Email: <a href="mailto:aishwarya312005@gmail.com">aishwarya312005@gmail.com</a><br />
+      Phone: <a href="tel:+916381938797">+91 63819 38797</a><br />
+      LinkedIn: <a href="https://linkedin.com/in/aishwarya315" target="_blank" rel="noopener noreferrer">linkedin.com/in/aishwarya315</a>
+    </p>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Aishwarya J. All rights reserved.
+</footer>
+</body>
+</html>
